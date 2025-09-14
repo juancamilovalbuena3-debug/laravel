@@ -40,7 +40,10 @@ return [
             'busy_timeout' => null,
             'journal_mode' => null,
             'synchronous' => null,
+<<<<<<< HEAD
             'transaction_mode' => 'DEFERRED',
+=======
+>>>>>>> bea4d40d935c6c931ab5d9da09bd5336c3458aae
         ],
 
         'mysql' => [
@@ -148,8 +151,12 @@ return [
 
         'options' => [
             'cluster' => env('REDIS_CLUSTER', 'redis'),
+<<<<<<< HEAD
             'prefix' => env('REDIS_PREFIX', Str::slug((string) env('APP_NAME', 'laravel')).'-database-'),
             'persistent' => env('REDIS_PERSISTENT', false),
+=======
+            'prefix' => env('REDIS_PREFIX', Str::slug(env('APP_NAME', 'laravel'), '_').'_database_'),
+>>>>>>> bea4d40d935c6c931ab5d9da09bd5336c3458aae
         ],
 
         'default' => [
@@ -159,10 +166,13 @@ return [
             'password' => env('REDIS_PASSWORD'),
             'port' => env('REDIS_PORT', '6379'),
             'database' => env('REDIS_DB', '0'),
+<<<<<<< HEAD
             'max_retries' => env('REDIS_MAX_RETRIES', 3),
             'backoff_algorithm' => env('REDIS_BACKOFF_ALGORITHM', 'decorrelated_jitter'),
             'backoff_base' => env('REDIS_BACKOFF_BASE', 100),
             'backoff_cap' => env('REDIS_BACKOFF_CAP', 1000),
+=======
+>>>>>>> bea4d40d935c6c931ab5d9da09bd5336c3458aae
         ],
 
         'cache' => [
@@ -172,10 +182,13 @@ return [
             'password' => env('REDIS_PASSWORD'),
             'port' => env('REDIS_PORT', '6379'),
             'database' => env('REDIS_CACHE_DB', '1'),
+<<<<<<< HEAD
             'max_retries' => env('REDIS_MAX_RETRIES', 3),
             'backoff_algorithm' => env('REDIS_BACKOFF_ALGORITHM', 'decorrelated_jitter'),
             'backoff_base' => env('REDIS_BACKOFF_BASE', 100),
             'backoff_cap' => env('REDIS_BACKOFF_CAP', 1000),
+=======
+>>>>>>> bea4d40d935c6c931ab5d9da09bd5336c3458aae
         ],
 
     ],

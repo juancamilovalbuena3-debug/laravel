@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 namespace Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
@@ -14,3 +15,8 @@ class ExampleTest extends TestCase
         $this->assertTrue(true);
     }
 }
+=======
+test('that true is true', function () {
+    expect(true)->toBeTrue();
+});
+>>>>>>> bea4d40d935c6c931ab5d9da09bd5336c3458aae
